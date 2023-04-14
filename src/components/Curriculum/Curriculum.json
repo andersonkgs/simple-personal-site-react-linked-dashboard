@@ -1,0 +1,66 @@
+{
+    "about": "No trabalho: experiente em diversas áreas de trabalho, sempre comprometido com a minha função no dia a dia da empresa, proativo, criativo, eficiente, dedicado e resolutivo.",
+    "about2": "Na vida por aí a fora: sou caseiro, adoro ver uma boa série e um bom filme. Gosto bastante também de me divertir com alguns jogos eletrônicos. Sou amante do bom e eterno rock 'n' roll. Só saio de casa nas horas vagas se for por um bom motivo, comida e diversão com uns amigos é um bom motivo!",
+    "academicEducation": [
+        {
+            "title": "Curso de Programação",
+            "description": "Curso para Desenvolvedor Jr",
+            "local": "Comeia Academy/Online",
+            "dateEnd": "cursando/2023"
+        },
+        {
+            "title": "Libras",
+            "description": "Básico I e II, cursando o Intermiário I",
+            "local": "Escola de Governo/Caruaru",
+            "dateEnd": "12/2022 e cursando/2023"
+        },
+        {
+            "title": "Bacharel em Design",
+            "description": "Curso de Formação Superior em Design",
+            "local": "Universidade Federal de Pernambuco/Caruaru",
+            "dateEnd": "12/2019"
+        },
+        {
+            "title": "Curso de Python",
+            "description": "Mundo 01: Fundamentos: Programação",
+            "local": "CursoemVideo.com/Online",
+            "dateEnd": "03/2018"
+        },
+        {
+            "title": "Informática Básica",
+            "description": "Informática Básica e Montagem de Computadores",
+            "local": "T&T Informática/Caruaru",
+            "dateEnd": "12/2006"
+        }
+    ],
+    "professionalHistory": [
+        {
+            "jobPosition": "Pregoeiro",
+            "employer": "Secretaria de Saúde de Caruaru",
+            "local": "Caruaru/PE",
+            "dateStart": "04/2022",
+            "dateEnd": "Atual"
+        },
+        {
+            "jobPosition": "Auxiliar Administrativo",
+            "employer": "Secretaria de Saúde de Caruaru",
+            "local": "Caruaru/PE",
+            "dateStart": "10/2015",
+            "dateEnd": "03/2022"
+        },
+        {
+            "jobPosition": "Auxiliar de Processos I",
+            "employer": "Nagem Comércio de Informática",
+            "local": "Caruaru/PE",
+            "dateStart": "04/2012",
+            "dateEnd": "10/2015"
+        },
+        {
+            "jobPosition": "Empacotador/Passador",
+            "employer": "Atacadão Auto Serviço",
+            "local": "Caruaru/PE",
+            "dateStart": "10/2008",
+            "dateEnd": "03/2012"
+        }
+    ]
+}
