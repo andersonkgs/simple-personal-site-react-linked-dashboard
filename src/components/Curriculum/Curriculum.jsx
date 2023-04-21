@@ -28,7 +28,7 @@ function Curriculum() {
                     <ul>
                         {data.professionalHistory.map((item, index) => (
                             <li key={index}>
-                                <b>{item.jobPosition}</b> - {item.employer} - {item.local} - {item.dateStart} - {item.dateEnd}
+                                <b>{item.title}</b> - {item.description} - {item.local} - {item.dateStart} - {item.dateEnd}
                             </li>
                         ))}                      
                     </ul>

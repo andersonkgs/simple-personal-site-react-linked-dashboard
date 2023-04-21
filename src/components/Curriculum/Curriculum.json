@@ -35,29 +35,29 @@
     ],
     "professionalHistory": [
         {
-            "jobPosition": "Pregoeiro",
-            "employer": "Secretaria de Saúde de Caruaru",
+            "title": "Pregoeiro",
+            "description": "Secretaria de Saúde de Caruaru",
             "local": "Caruaru/PE",
             "dateStart": "04/2022",
             "dateEnd": "Atual"
         },
         {
-            "jobPosition": "Auxiliar Administrativo",
-            "employer": "Secretaria de Saúde de Caruaru",
+            "title": "Auxiliar Administrativo",
+            "description": "Secretaria de Saúde de Caruaru",
             "local": "Caruaru/PE",
             "dateStart": "10/2015",
             "dateEnd": "03/2022"
         },
         {
-            "jobPosition": "Auxiliar de Processos I",
-            "employer": "Nagem Comércio de Informática",
+            "title": "Auxiliar de Processos I",
+            "description": "Nagem Comércio de Informática",
             "local": "Caruaru/PE",
             "dateStart": "04/2012",
             "dateEnd": "10/2015"
         },
         {
-            "jobPosition": "Empacotador/Passador",
-            "employer": "Atacadão Auto Serviço",
+            "title": "Empacotador/Passador",
+            "description": "Atacadão Auto Serviço",
             "local": "Caruaru/PE",
             "dateStart": "10/2008",
             "dateEnd": "03/2012"
