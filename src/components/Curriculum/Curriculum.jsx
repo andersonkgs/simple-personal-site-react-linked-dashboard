@@ -2,23 +2,28 @@ import React from "react";
 
 import "./Curriculum.css";
 
-import data from "./Curriculum.json";
+// import data from "./Curriculum.json";
 
-function Curriculum() {
+function Curriculum(props) {
+    const { sobre, experienciaAcademica, experienciaProfissional } = props.curriculo;
+
+    if(!sobre || !experienciaAcademica || !experienciaProfissional) {
+        return <p>Carregando...</p>
+    }
+
     return (
         <main className="content-page">
             <div className="container-contents">
                 <div className="contents">
                     <h3>SOBRE MIM</h3>
-                    <p>{data.about}</p>
-                    <p>{data.about2}</p>
+                    <p>{sobre}</p>
                 </div>
                 <div className="contents">
                     <h3>FORMAÇÕES ACADÊMICAS</h3>
                     <ul>
-                        {data.academicEducation.map((item, index) => (
+                        {experienciaAcademica.map((item, index) => (
                             <li key={index}>
-                                <b>{item.title}</b> - {item.description} - {item.local} - {item.dateEnd}
+                                <b>{item.titulo}</b> - {item.descricao} - {item.local} - {item.dataFim};
                             </li>
                         ))}
                     </ul>
@@ -26,9 +31,9 @@ function Curriculum() {
                 <div className="contents">
                     <h3>HISTÓRICO PROFISSIONAL</h3>
                     <ul>
-                        {data.professionalHistory.map((item, index) => (
+                        {experienciaProfissional.map((item, index) => (
                             <li key={index}>
-                                <b>{item.title}</b> - {item.description} - {item.local} - {item.dateStart} - {item.dateEnd}
+                                <b>{item.titulo}</b> - {item.descricao} - {item.local} - {item.dataInicio} - {item.dataFim};
                             </li>
                         ))}                      
                     </ul>

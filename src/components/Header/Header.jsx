@@ -2,20 +2,22 @@ import React from "react";
 
 import "./Header.css";
 
-import andersonAvatar from "../../../public/images/anderson-avatar.png";
 import iconInstagram from "../../../public/icons/instagram-24.png";
 import iconDiscord from "../../../public/icons/discord-24.png";
 import iconGitHub from "../../../public/icons/github-24.png";
 
 import { Link } from "react-router-dom";
 
-function Header() {
+function Header(props) {
+
+    const { foto, nome, cargo } = props.informacoes;
+
     return (
         <header>
             <div>
                 <div className="profile">
-                    <img src={andersonAvatar} alt="Foto de rosto de Anderson"/>
-                    <h1>ANDERSON SILVA</h1>
+                    <img src={foto} alt="Foto de rosto de Anderson"/>
+                    <h1 id="nome-perfil">{nome}</h1>
                 </div>
                 <div className="menu">
                     <Link to="/" className="button">CURRÍCULO</Link>
@@ -25,7 +27,7 @@ function Header() {
             </div>          
             <div className="subheader">
                 <div className="info">
-                    <h3>Desenvolvedor de Software</h3>
+                    <h3 id="eventoSubtitulo">{cargo}</h3>
                 </div>
                 <div className="social-midia">
                     <a href="https://www.instagram.com/din.serafim/" target="_blank">

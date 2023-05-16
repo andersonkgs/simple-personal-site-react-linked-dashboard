@@ -1,4 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import api from "./api";
+
+import "./App.css";
 
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -6,20 +11,51 @@ import Footer from "./components/Footer/Footer";
 import Curriculum from "./components/Curriculum/Curriculum";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
-
-import "./App.css";
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [informacoes, setInformacoes] = useState({});
+  const [curriculo, setCurriculo] = useState({});
+  const [portfolio, setPortfolio] = useState([]);
+
+  const fetchDados = async () => {
+    try {
+      const informacao = await api.get(`/informacoes/1`);
+      setInformacoes({
+        foto: informacao.data.foto,
+        nome: informacao.data.nome,
+        cargo: informacao.data.cargo
+      });
+
+      const experienciaAcademica = await api.get(`/experiencias?tipo=academica`);
+      const experienciaProfissional = await api.get(`/experiencias?tipo=profissional`);
+
+      setCurriculo({
+        sobre: informacao.data.sobre,
+        experienciaAcademica: experienciaAcademica.data,
+        experienciaProfissional: experienciaProfissional.data
+      });
+
+      const portfolio = await api.get(`/portfolio`);
+      setPortfolio(portfolio.data);
+
+    } catch (error) {
+      console.error("Erro ao buscar dados:", error);
+    }
+  };
+
+  useEffect(() => {
+    fetchDados();
+  }, []);
+  
   return (
     <>
     
       <BrowserRouter>
-        <Header></Header>
+        <Header informacoes={informacoes}></Header>
         <Routes>
-          <Route index element={<Curriculum />} />
-          <Route path="portfolio" element={<Portfolio />} />
+          <Route index element={<Curriculum curriculo={curriculo} />} />
+          <Route path="portfolio" element={<Portfolio portfolio={portfolio} />} />
           <Route path="contato" element={<Contact />} />
         </Routes>
       </BrowserRouter>

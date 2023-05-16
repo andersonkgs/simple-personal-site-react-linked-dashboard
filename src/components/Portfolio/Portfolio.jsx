@@ -1,12 +1,12 @@
 import React from "react";
 
-import PortfolioItem from "../PortfolioItem/PortfolioItem";
-
 import "./Portfolio.css";
+
+import PortfolioItem from "../PortfolioItem/PortfolioItem";
 
 import portfolio from "./Portfolio.json";
 
-function Portfolio() {
+function Portfolio({ portfolio }) {
 
     return (
         <main className="content-page">
