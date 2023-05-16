@@ -11,7 +11,6 @@ import Footer from "./components/Footer/Footer";
 import Curriculum from "./components/Curriculum/Curriculum";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
-import { useState } from "react";
 
 function App() {
   const [informacoes, setInformacoes] = useState({});
