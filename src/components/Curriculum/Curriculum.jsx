@@ -2,8 +2,6 @@ import React from "react";
 
 import "./Curriculum.css";
 
-// import data from "./Curriculum.json";
-
 function Curriculum(props) {
     const { sobre, experienciaAcademica, experienciaProfissional } = props.curriculo;
 

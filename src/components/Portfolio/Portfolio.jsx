@@ -4,8 +4,6 @@ import "./Portfolio.css";
 
 import PortfolioItem from "../PortfolioItem/PortfolioItem";
 
-import portfolio from "./Portfolio.json";
-
 function Portfolio({ portfolio }) {
 
     return (
