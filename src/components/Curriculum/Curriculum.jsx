@@ -19,7 +19,7 @@ function Curriculum(props) {
                 <div className="contents">
                     <h3>FORMAÇÕES ACADÊMICAS</h3>
                     <ul>
-                        {experienciaAcademica?.map((item, index) => (
+                        {experienciaAcademica.map((item, index) => (
                             <li key={index}>
                                 <b>{item.titulo}</b> - {item.descricao} - {item.local} - {item.dataInicio} - {item.dataFim};
                             </li>
@@ -29,7 +29,7 @@ function Curriculum(props) {
                 <div className="contents">
                     <h3>HISTÓRICO PROFISSIONAL</h3>
                     <ul>
-                        {experienciaProfissional?.map((item, index) => (
+                        {experienciaProfissional.map((item, index) => (
                             <li key={index}>
                                 <b>{item.titulo}</b> - {item.descricao} - {item.local} - {item.dataInicio} - {item.dataFim};
                             </li>
